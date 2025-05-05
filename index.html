@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Support Monitoring Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: calc(100vh - 140px); /* Adjust height based on header/footer */
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .report-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header, footer {
+                padding: 15px;
+            }
+
+            main {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Failed Wallets and Loan Transaction Dashboard</h1>
+    </header>
+
+    <main>
+        <iframe 
+            class="report-frame"
+            title="CDL Transactions Monitoring" 
+            src="https://app.powerbi.com/reportEmbed?reportId=ca8373c0-8324-4b1d-bc3f-c7b27013524a&autoAuth=true&ctid=1c3b06c3-5c40-4e52-bb79-f3fdf2d9ae66" 
+            allowFullScreen="true">
+        </iframe>
+    </main>
+
+    <footer>
+        &copy; 2025 CDL Reports | Powered by Power BI
+    </footer>
+
+</body>
+</html>
